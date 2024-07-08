@@ -1,0 +1,116 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagina {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inicio {
+    background-image: url('/Princesa.jpg');
+}
+
+#video {
+    background-image: url('/Globos.jpg');
+}
+
+#inspiracion {
+    background-image: url('/Nezuco.png');
+}
+
+.contenido {
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+.texto-transparente {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.cursiva {
+    font-style: italic;
+}
+
+.boton {
+    display: inline-block;
+    padding: 12px 28px;
+    margin: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-image: linear-gradient(to bottom right, #f700ff, #ff00c8);
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0px 4px 0px #ea00ff;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.boton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 0px #c300ff;
+}
+
+.boton:active {
+    transform: translateY(0px);
+    box-shadow: none;
+    background-image: linear-gradient(to bottom right, #ff00ff, #ff00f2);
+}
+
+.boton:before,
+.boton:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.boton:before {
+    top: -3px;
+    left: -3px;
+    border-radius: 40px;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+}
+
+.boton:after {
+    bottom: -3px;
+    right: -3px;
+    border-radius: 40px;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+}
+
+.oculto {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .boton {
+        font-size: 18px;
+    }
+
+    .contenido {
+        max-width: 800px;
+    }
+}
